@@ -1,0 +1,25 @@
+meta {
+  name: Verify Mobile OTP
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{dev_url}}/api/v2/auth/verify-mobile-otp
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "mobile": "9910640986",
+    "countryCode": "IN",
+    "country": "India",
+    "otp": ""
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,24 @@
+meta {
+  name: Verify Email OTP
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{dev_url}}/api/v2/auth/verify-otp
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "email": "lakshya@factacy.ai",
+    "otp": "7680",
+    "password": "lakshya@factacy.ai"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

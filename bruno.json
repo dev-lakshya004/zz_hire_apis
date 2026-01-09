@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "zz_hire-candidate_v2",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

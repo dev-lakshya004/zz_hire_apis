@@ -1,0 +1,23 @@
+meta {
+  name: Login User
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{dev_url}}/api/v2/auth/login
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "email": "lakshya@factacy.ai",
+    "password": "lakshya@factacy.ai"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

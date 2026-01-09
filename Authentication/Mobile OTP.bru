@@ -1,0 +1,23 @@
+meta {
+  name: Mobile OTP
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{dev_url}}/api/v2/auth/send-mobile-otp
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "mobile": "9910640986",
+    "countryCode": "IN"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
