@@ -1,0 +1,31 @@
+meta {
+  name: Update Profile
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{dev_url}}/api/v2/users/update-profile
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "firstName": "lakshya",
+    "lastName": "kumar",
+    "gender": "Male",
+    "interest": ["SQL","JAVA"],
+    "designation": "Software Dev",
+    "location": "Kolkata",
+    "linkedin": "http://linkedin.com",
+    "currentCTC": 2000000,
+    "expectedCTC": 5000000,
+    "jobIndustry": "Information Technology"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,27 @@
+meta {
+  name: Jobs Related API's
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{dev_url}}/api/v2/users/search-jobs?workType=Onsite
+  body: none
+  auth: inherit
+}
+
+params:query {
+  workType: Onsite
+  ~skills: java,python
+  ~title: developer
+  ~location: pune
+  ~minSalary: 1000000
+  ~type: 
+  ~maxSalary: 
+  ~time: 
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

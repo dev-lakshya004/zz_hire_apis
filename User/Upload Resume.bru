@@ -1,0 +1,20 @@
+meta {
+  name: Upload Resume
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{dev_url}}/api/v2/users/resume
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  resume: @file(/home/lakshya/Downloads/Resume_lakshya_verma (1).pdf (3).pdf)
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
