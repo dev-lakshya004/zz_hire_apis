@@ -1,0 +1,22 @@
+meta {
+  name: Apply Job
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{dev_url}}/api/v2/users/apply-jobs
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "jobId": "5ca3d20a-f708-454d-8a37-cb978d1f7b98"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

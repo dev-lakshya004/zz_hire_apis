@@ -1,0 +1,20 @@
+meta {
+  name: Get HomePage
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{dev_url}}/api/v2/users/homepage
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~page: 1
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
