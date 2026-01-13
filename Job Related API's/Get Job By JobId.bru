@@ -1,0 +1,20 @@
+meta {
+  name: Get Job By JobId
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{dev_url}}/api/v2/users/getjob?id=c7ecf20b-6aca-407e-b1c8-56bc2b9c6535
+  body: none
+  auth: inherit
+}
+
+params:query {
+  id: c7ecf20b-6aca-407e-b1c8-56bc2b9c6535
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

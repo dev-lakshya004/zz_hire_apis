@@ -1,0 +1,36 @@
+meta {
+  name: Submit Disc Test
+  type: http
+  seq: 9
+}
+
+post {
+  url: {{dev_url}}/api/v2/users/disc-test
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "Which of the following adjectives best describes you?": "Patient, Supportive, Steady",
+      "Which of the following adjectives best describes your communication style?": "Patient and understanding",
+      "When making decisions, do you primarily rely on:": "A combination of intuition, logic, and relationships",
+      "When faced with a tight deadline, how do you typically respond?": "You delegate tasks to others and coordinate the team's efforts",
+      "How do you prefer to approach new challenges?": "You seek input from others and build consensus before taking action",
+      "When working in a team, how do you contribute?": "You build relationships and create a positive team environment",
+      "What motivates you most?": "Achieving perfection and accuracy",
+      "How do you typically spend your free time?": "Engaging in competitive activities",
+      "A team member is struggling with a task. How do you approach the situation?": "Take over the task and show them how it’s done",
+      "You have a new idea for a project. How do you present it to your team?": "Present the idea confidently and directly",
+      "What is your ideal work environment?": "Stable and predictable",
+      "How do you typically react to change?": "Embrace change as an opportunity",
+      "How do you prefer to receive feedback?": "Direct and to the point",
+      "You witness a coworker taking credit for your work. How do you handle the situation?": "Discuss the issue with a supervisor or manager",
+      "You’re planning a weekend trip with a group of friends, but everyone has different ideas about what to do. How would you handle this situation?": "Listen patiently to everyone’s suggestions and try to find a middle ground that balances everyone’s preferences"
+    }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

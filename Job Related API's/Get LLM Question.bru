@@ -1,19 +1,19 @@
 meta {
-  name: Forget Password OTP verify
+  name: Get LLM Question
   type: http
   seq: 5
 }
 
 post {
-  url: {{dev_url}}/api/v2/auth/reset-otp-verify
+  url: {{dev_url}}/api/v2/users/question
   body: json
   auth: inherit
 }
 
 body:json {
   {
-    "email": "lakshya@factacy.ai",
-    "otp": "2299"
+    "id": "f9f98275-173e-40c5-ae54-68dc58fc0c94",
+    "ques_no": "6"
   }
 }
 

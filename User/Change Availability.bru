@@ -1,18 +1,18 @@
 meta {
-  name: Apply Job
+  name: Change Availability
   type: http
-  seq: 2
+  seq: 10
 }
 
 post {
-  url: {{dev_url}}/api/v2/users/apply-jobs
+  url: {{dev_url}}/api/v2/users/availability
   body: json
   auth: inherit
 }
 
 body:json {
   {
-    "jobId": "c7ecf20b-6aca-407e-b1c8-56bc2b9c6535"
+    "isOpenToWork": true
   }
 }
 

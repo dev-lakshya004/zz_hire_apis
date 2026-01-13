@@ -5,16 +5,16 @@ meta {
 }
 
 get {
-  url: {{dev_url}}/api/v2/users/search-jobs?workType=Onsite
+  url: {{dev_url}}/api/v2/users/search-jobs?workType=Onsite&title=developer&location=pune&skills=java,python
   body: none
   auth: inherit
 }
 
 params:query {
   workType: Onsite
-  ~skills: java,python
-  ~title: developer
-  ~location: pune
+  title: developer
+  location: pune
+  skills: java,python
   ~minSalary: 1000000
   ~type: 
   ~maxSalary: 
