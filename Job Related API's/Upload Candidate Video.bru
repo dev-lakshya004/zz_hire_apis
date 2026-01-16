@@ -1,0 +1,21 @@
+meta {
+  name: Upload Candidate Video
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{dev_url}}/api/v2/users/upload-video
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  video: @file(/home/lakshya/Downloads/1_blob.mp4)
+  id: f9f98275-173e-40c5-ae54-68dc58fc0c94
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,18 +1,18 @@
 meta {
-  name: Apply Job
+  name: Submit Interview
   type: http
-  seq: 1
+  seq: 7
 }
 
 post {
-  url: {{dev_url}}/api/v2/users/apply-jobs
+  url: {{dev_url}}/api/v2/users/dbupdate
   body: json
   auth: inherit
 }
 
 body:json {
   {
-    "jobId": "c7ecf20b-6aca-407e-b1c8-56bc2b9c6535"
+    "id":"1201b3ce-7421-41c3-8bb7-e60292cb3ffag.pdf"
   }
 }
 
