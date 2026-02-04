@@ -1,0 +1,20 @@
+meta {
+  name: Get Mock Interview Detail
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{dev_url}}/api/v2/mock-interview/get-mock-data-detail?id=1e03a246-b731-413b-90ee-16518eee7c53
+  body: none
+  auth: inherit
+}
+
+params:query {
+  id: 1e03a246-b731-413b-90ee-16518eee7c53
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

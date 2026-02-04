@@ -1,0 +1,16 @@
+meta {
+  name: Get Plans
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{dev_url}}/api/v2/mock-interview/get-plans
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,16 @@
+meta {
+  name: Get Total Credits
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{dev_url}}/api/v2/mock-interview/get-credits
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,21 @@
+meta {
+  name: Get Mock Interview Data
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{dev_url}}/api/v2/mock-interview/get-mock-data?limit=25
+  body: none
+  auth: inherit
+}
+
+params:query {
+  limit: 25
+  ~skip: 1
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

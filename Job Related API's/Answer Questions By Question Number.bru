@@ -5,7 +5,7 @@ meta {
 }
 
 post {
-  url: {{dev_url}}/api/v2/users/videoUpload
+  url: {{dev_url}}/api/v2/hr-user/videoUpload
   body: multipartForm
   auth: inherit
 }
@@ -14,7 +14,7 @@ body:multipart-form {
   id: f9f98275-173e-40c5-ae54-68dc58fc0c94
   file: @file(/home/lakshya/Downloads/1_blob.mp4)
   question_no: 2
-  emotionData: {"data":"bla"}
+  emotionData: {"data":"bla","angry":"very"}
   tabSwitchTiming: 24
 }
 
